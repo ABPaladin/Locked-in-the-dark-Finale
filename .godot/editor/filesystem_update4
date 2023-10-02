@@ -1,2 +1,4 @@
 res://World/world.tscn
 res://Player/player.tscn
+res://World/canvas_layer.tscn
+res://World/LifeBar.gd

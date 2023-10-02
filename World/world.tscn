@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6x8r3br4c23x"]
+[gd_scene load_steps=8 format=3 uid="uid://b6x8r3br4c23x"]
 
 [ext_resource type="Texture2D" uid="uid://x5ku6lal4pge" path="res://Art/Пиздкц.png" id="1_gd1ks"]
 [ext_resource type="Texture2D" uid="uid://bo41x4yd8dqxe" path="res://Art/Dungeon Tile Set/Dungeon Tile Set.png" id="2_feja4"]
 [ext_resource type="PackedScene" uid="uid://2ggpan6wtfbo" path="res://Player/player.tscn" id="3_a6wa5"]
+[ext_resource type="PackedScene" uid="uid://dob6bl4sx8wjx" path="res://World/canvas_layer.tscn" id="4_w6euk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r5rf2"]
 texture = ExtResource("1_gd1ks")
@@ -654,3 +655,5 @@ drag_vertical_enabled = true
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 energy = 0.7
 blend_mode = 1
+
+[node name="CanvasLayer" parent="." instance=ExtResource("4_w6euk")]

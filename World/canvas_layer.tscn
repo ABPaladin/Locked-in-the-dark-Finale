@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3 uid="uid://dob6bl4sx8wjx"]
+
+[ext_resource type="Script" path="res://World/LifeBar.gd" id="1_cgxww"]
+[ext_resource type="Texture2D" uid="uid://djejves0cxftv" path="res://Art/Assets/Sprite-0001.png" id="2_hitf0"]
+
+[sub_resource type="Theme" id="Theme_w3v8u"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vj8gv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qhts"]
+texture = SubResource("CanvasTexture_vj8gv")
+modulate_color = Color(0.188235, 0.188235, 0.188235, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ixd3g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sq21j"]
+texture = SubResource("CanvasTexture_ixd3g")
+modulate_color = Color(0.928775, 0.573838, 1.15514e-06, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1162.0
+offset_bottom = 664.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Control"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 107.0
+offset_bottom = 31.0
+theme = SubResource("Theme_w3v8u")
+theme_override_styles/background = SubResource("StyleBoxTexture_3qhts")
+theme_override_styles/fill = SubResource("StyleBoxTexture_sq21j")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_cgxww")
+
+[node name="Timer" type="Timer" parent="Control/ProgressBar"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/ProgressBar"]
+position = Vector2(-16, 7)
+scale = Vector2(2, 2)
+texture = ExtResource("2_hitf0")
+flip_h = true
