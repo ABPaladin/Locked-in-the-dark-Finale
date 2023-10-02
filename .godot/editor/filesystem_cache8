@@ -1,13 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696236956
+::res://::1696248979
 icon.svg::CompressedTexture2D::5347226435700743967::1696197575::1696197581::1::::<><>::
 README.md::TextFile::-1::1696197633::0::1::::<><>::
-::res://Art/::1696201839
+::res://Art/::1696261337
+deathh.png::CompressedTexture2D::1447203852719560160::1696261337::1696261337::1::::<><>::
 Пиздкц.png::CompressedTexture2D::1676919267334860772::1696201621::1696201621::1::::<><>::
-::res://Art/Assets/::1696236776
+::res://Art/Assets/::1696260362
+Floppa.png::CompressedTexture2D::7011232578806635265::1696260362::1696260362::1::::<><>::
 sprite 12.png::CompressedTexture2D::3971238034692932904::1696155286::1696234500::1::::<><>::
 Sprite-0001.png::CompressedTexture2D::7799803348484083495::1696236766::1696236776::1::::<><>::
 Sprite-0008.png::CompressedTexture2D::8410672669413927461::1696151727::1696234500::1::::<><>::
+VCR_OSD_MONO_1.001.ttf::FontFile::5125650118809996711::1696247066::1696247066::1::::<><>::
 ::res://Art/Assets/New folder/::1696201899
 ::res://Art/Assets/New folder/CHARACTER/::1696201601
 ::res://Art/Assets/New folder/CHARACTER/IDLE/::1696203342
@@ -19,7 +22,8 @@ JUMP.png::CompressedTexture2D::2768897449397437346::1696201601::1696201602::1:::
 run.png::CompressedTexture2D::1631381640056931688::1696201601::1696201602::1::::<><>::
 ::res://Art/Assets/New folder/CHARACTER/run left/::1696201602
 Run left.png::CompressedTexture2D::2807996231308308447::1696201601::1696201602::1::::<><>::
-::res://Art/Assets/New folder/MONSTERS/::1696201601
+::res://Art/Assets/New folder/MONSTERS/::1696261324
+deathh.png::CompressedTexture2D::4702056439466943905::1696261324::1696261324::1::::<><>::
 ::res://Art/Assets/New folder/MONSTERS/animation/::1696201602
 monster.png::CompressedTexture2D::515854225987451766::1696201601::1696201602::1::::<><>::
 ::res://Art/Assets/New folder/MONSTERS/no animation/::1696201602
@@ -29,10 +33,18 @@ spider.png::CompressedTexture2D::2910457183360420959::1696201601::1696201602::1:
 ::res://Art/Dungeon Tile Set/::1696201840
 Dungeon Tile Set.png::CompressedTexture2D::3430552724998031322::1696201839::1696201840::1::::<><>::
 ::res://Camera/::1696197701
-::res://Player/::1696236858
+::res://Player/::1696248584
 player.gd::GDScript::-1::1696210753::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1907876155137512796::1696236858::0::1::::<><>::res://Player/player.gd<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://bfpjlo64bp4cc::::res://Art/Assets/New folder/CHARACTER/jump/JUMP.png<>uid://bgahj1s3fbgwd::::res://Art/Assets/New folder/CHARACTER/run left/Run left.png
-::res://World/::1696236902
-canvas_layer.tscn::PackedScene::8145854875741557401::1696236902::0::1::::<><>::res://World/LifeBar.gd<>uid://djejves0cxftv::::res://Art/Assets/Sprite-0001.png
-LifeBar.gd::GDScript::-1::1696236547::0::1::::<>ProgressBar<>::
-world.tscn::PackedScene::4611791017083031547::1696236858::0::1::::<><>::uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>uid://dob6bl4sx8wjx::::res://World/canvas_layer.tscn
+player.tscn::PackedScene::1907876155137512796::1696242368::0::1::::<><>::res://Player/player.gd<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://bfpjlo64bp4cc::::res://Art/Assets/New folder/CHARACTER/jump/JUMP.png<>uid://bgahj1s3fbgwd::::res://Art/Assets/New folder/CHARACTER/run left/Run left.png
+item.gd::GDScript::-1::1696243660::0::1::::<>Area2D<>::
+::res://World/::1696261016
+LifeBar.gd::GDScript::-1::1696261013::0::1::::<>ProgressBar<>::
+Menu.tscn::PackedScene::4919937931379096008::1696261016::0::1::::<><>::res://World/Menu.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png
+Menu.gd::GDScript::-1::1696246116::0::1::::<>Control<>::
+Finish.gd::GDScript::-1::1696249745::0::1::::<>Area2D<>::
+change_stage.tscn::PackedScene::836325552527675606::1696260459::0::1::::<><>::res://World/change_stage.gd<>uid://cigibkdx2wkwl::::res://icon.svg
+change_stage.gd::GDScript::-1::1696258695::0::1::::<>Area2D<>::
+End.tscn::PackedScene::5434641985245128876::1696260397::0::1::::<><>::res://World/End.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://c65j8grkwi242::::res://Art/Assets/Floppa.png<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png
+End.gd::GDScript::-1::1696260053::0::1::::<>Control<>::
+death.tscn::PackedScene::8296566590349077707::1696261016::0::1::::<><>::
+world.tscn::PackedScene::4611791017083031547::1696261016::0::1::::<><>::uid://l6efotllfdvi::::res://World/change_stage.tscn<>uid://ccdiwnydxscvw::::res://World/Menu.tscn<>uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>res://World/LifeBar.gd<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://cjot0273j5rku::::res://World/end.tscn<>uid://djejves0cxftv::::res://Art/Assets/Sprite-0001.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>res://Player/item.gd

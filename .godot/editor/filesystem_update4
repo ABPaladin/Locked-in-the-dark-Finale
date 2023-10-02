@@ -5,3 +5,11 @@ res://Player/item.tscn
 res://Player/item.gd
 res://World/ProgressBarManager.gd
 res://World/LifeBar.gd
+res://World/Menu.gd
+res://World/Menu.tscn
+res://World/Finish.gd
+res://World/change_stage.gd
+res://World/change_stage.tscn
+res://World/End.tscn
+res://World/End.gd
+res://World/death.tscn

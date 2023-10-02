@@ -14,9 +14,13 @@ func _process(delta):
 	if currentTime <= 0:
 		$Timer.stop()
 		print("Countdown complete.")
+		get_tree().change_scene_to_file("res://World/death.tscn")
+		# Transfer the character to another scene here
 	else:
 		currentTime -= delta
 
 func _on_Timer_timeout():
 	# Decrease the current time by 1 second when the timer fires
 	currentTime -= 1
+
+

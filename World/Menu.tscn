@@ -1,0 +1,211 @@
+[gd_scene load_steps=25 format=3 uid="uid://ccdiwnydxscvw"]
+
+[ext_resource type="Script" path="res://World/Menu.gd" id="1_c4osi"]
+[ext_resource type="FontFile" uid="uid://cfa5ydeoiwbul" path="res://Art/Assets/VCR_OSD_MONO_1.001.ttf" id="2_6gw68"]
+[ext_resource type="Texture2D" uid="uid://l52fge0b31eb" path="res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png" id="3_1njb4"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6jg7p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlr4b"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2d2u"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(20, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwjq2"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(40, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0dh7"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(60, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wsej"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(80, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ole8b"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(100, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lebai"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(120, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anvcb"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(140, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m075d"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(160, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5e7r1"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(180, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmixl"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(200, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8le4f"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(220, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n74y"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(240, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbxme"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(260, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35ehg"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(280, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqpon"]
+atlas = ExtResource("3_1njb4")
+region = Rect2(300, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_snul0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlr4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2d2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwjq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0dh7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wsej")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ole8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lebai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anvcb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m075d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5e7r1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmixl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8le4f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n74y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbxme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35ehg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqpon")
+}],
+"loop": true,
+"name": &"default",
+"speed": 16.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_adkpw"]
+offsets = PackedFloat32Array(0, 0.716129)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_7gm2t"]
+gradient = SubResource("Gradient_adkpw")
+width = 16
+height = 16
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Shortcut" id="Shortcut_xodq6"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 468.0
+offset_bottom = 283.0
+script = ExtResource("1_c4osi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(605.5, 364)
+scale = Vector2(1227, 754)
+texture = SubResource("CanvasTexture_6jg7p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(67, 90)
+scale = Vector2(1.85, 1.85)
+sprite_frames = SubResource("SpriteFrames_snul0")
+frame_progress = 0.270474
+
+[node name="PointLight2D2" type="PointLight2D" parent="AnimatedSprite2D"]
+position = Vector2(-0.540539, -5.94595)
+color = Color(0.996094, 0.996094, 0.25, 1)
+energy = 1.3
+texture = SubResource("GradientTexture2D_7gm2t")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.286
+anchor_top = 0.322
+anchor_right = 0.286
+anchor_bottom = 0.322
+offset_left = -37.134
+offset_top = -33.058
+offset_right = 36.866
+offset_bottom = 32.942
+size_flags_vertical = 8
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_6gw68")
+shortcut = SubResource("Shortcut_xodq6")
+text = "Play"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_6gw68")
+text = "Exit
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 7.0
+offset_right = 231.0
+offset_bottom = 60.0
+theme_override_fonts/normal_font = ExtResource("2_6gw68")
+theme_override_font_sizes/normal_font_size = 24
+text = " Locked in the 
+	  DARK"
+autowrap_mode = 0
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
