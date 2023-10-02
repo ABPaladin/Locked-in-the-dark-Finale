@@ -1,4 +1,7 @@
 res://World/world.tscn
 res://Player/player.tscn
 res://World/canvas_layer.tscn
+res://Player/item.tscn
+res://Player/item.gd
+res://World/ProgressBarManager.gd
 res://World/LifeBar.gd

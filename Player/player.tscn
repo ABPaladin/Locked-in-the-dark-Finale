@@ -284,12 +284,12 @@ animations = [{
 radius = 4.28
 height = 15.06
 
-[sub_resource type="Gradient" id="Gradient_adkpw"]
+[sub_resource type="Gradient" id="Gradient_dnmw3"]
 offsets = PackedFloat32Array(0, 0.716129)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_gjhpd"]
-gradient = SubResource("Gradient_adkpw")
+gradient = SubResource("Gradient_dnmw3")
 width = 16
 height = 16
 fill = 1

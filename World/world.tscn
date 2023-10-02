@@ -1,9 +1,26 @@
-[gd_scene load_steps=8 format=3 uid="uid://b6x8r3br4c23x"]
+[gd_scene load_steps=18 format=3 uid="uid://b6x8r3br4c23x"]
 
 [ext_resource type="Texture2D" uid="uid://x5ku6lal4pge" path="res://Art/Пиздкц.png" id="1_gd1ks"]
+[ext_resource type="Script" path="res://World/LifeBar.gd" id="1_p810n"]
 [ext_resource type="Texture2D" uid="uid://bo41x4yd8dqxe" path="res://Art/Dungeon Tile Set/Dungeon Tile Set.png" id="2_feja4"]
+[ext_resource type="Texture2D" uid="uid://djejves0cxftv" path="res://Art/Assets/Sprite-0001.png" id="2_q0ov3"]
 [ext_resource type="PackedScene" uid="uid://2ggpan6wtfbo" path="res://Player/player.tscn" id="3_a6wa5"]
-[ext_resource type="PackedScene" uid="uid://dob6bl4sx8wjx" path="res://World/canvas_layer.tscn" id="4_w6euk"]
+[ext_resource type="Script" path="res://Player/item.gd" id="6_h7131"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4e6ur"]
+radius = 4.0
+height = 8.0
+
+[sub_resource type="Gradient" id="Gradient_adkpw"]
+offsets = PackedFloat32Array(0, 0.716129)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_087ya"]
+gradient = SubResource("Gradient_adkpw")
+width = 16
+height = 16
+fill = 1
+fill_from = Vector2(0.5, 0.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r5rf2"]
 texture = ExtResource("1_gd1ks")
@@ -631,7 +648,40 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_r5rf2")
 sources/1 = SubResource("TileSetAtlasSource_b20yc")
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Theme" id="Theme_w3v8u"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vj8gv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3qhts"]
+texture = SubResource("CanvasTexture_vj8gv")
+modulate_color = Color(0.188235, 0.188235, 0.188235, 1)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ixd3g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sq21j"]
+texture = SubResource("CanvasTexture_ixd3g")
+modulate_color = Color(0.928775, 0.573838, 1.15514e-06, 1)
+
+[node name="World" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(315, 150)
+script = ExtResource("6_h7131")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_4e6ur")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_q0ov3")
+centered = false
+
+[node name="PointLight2D2" type="PointLight2D" parent="Area2D/Sprite2D"]
+position = Vector2(6, 7)
+color = Color(0.996094, 0.996094, 0.25, 1)
+energy = 1.3
+texture = SubResource("GradientTexture2D_087ya")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_flc3v")
@@ -656,4 +706,27 @@ drag_vertical_enabled = true
 energy = 0.7
 blend_mode = 1
 
-[node name="CanvasLayer" parent="." instance=ExtResource("4_w6euk")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+offset_left = 44.0
+offset_top = 16.0
+offset_right = 119.0
+offset_bottom = 31.0
+theme = SubResource("Theme_w3v8u")
+theme_override_styles/background = SubResource("StyleBoxTexture_3qhts")
+theme_override_styles/fill = SubResource("StyleBoxTexture_sq21j")
+value = 100.0
+show_percentage = false
+script = ExtResource("1_p810n")
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="Timer" parent="CanvasLayer/ProgressBar"]
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ProgressBar"]
+position = Vector2(-16, 7)
+scale = Vector2(2, 2)
+texture = ExtResource("2_q0ov3")
+flip_h = true
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered" flags=18]

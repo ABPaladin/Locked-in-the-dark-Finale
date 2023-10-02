@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696234500
+::res://::1696236956
 icon.svg::CompressedTexture2D::5347226435700743967::1696197575::1696197581::1::::<><>::
 README.md::TextFile::-1::1696197633::0::1::::<><>::
 ::res://Art/::1696201839
 Пиздкц.png::CompressedTexture2D::1676919267334860772::1696201621::1696201621::1::::<><>::
-::res://Art/Assets/::1696236766
+::res://Art/Assets/::1696236776
 sprite 12.png::CompressedTexture2D::3971238034692932904::1696155286::1696234500::1::::<><>::
 Sprite-0001.png::CompressedTexture2D::7799803348484083495::1696236766::1696236776::1::::<><>::
 Sprite-0008.png::CompressedTexture2D::8410672669413927461::1696151727::1696234500::1::::<><>::
@@ -29,10 +29,10 @@ spider.png::CompressedTexture2D::2910457183360420959::1696201601::1696201602::1:
 ::res://Art/Dungeon Tile Set/::1696201840
 Dungeon Tile Set.png::CompressedTexture2D::3430552724998031322::1696201839::1696201840::1::::<><>::
 ::res://Camera/::1696197701
-::res://Player/::1696236594
+::res://Player/::1696236858
 player.gd::GDScript::-1::1696210753::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1907876155137512796::1696236594::0::1::::<><>::res://Player/player.gd<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://bfpjlo64bp4cc::::res://Art/Assets/New folder/CHARACTER/jump/JUMP.png<>uid://bgahj1s3fbgwd::::res://Art/Assets/New folder/CHARACTER/run left/Run left.png
-::res://World/::1696236594
-canvas_layer.tscn::PackedScene::8145854875741557401::1696236594::0::1::::<><>::res://World/LifeBar.gd
+player.tscn::PackedScene::1907876155137512796::1696236858::0::1::::<><>::res://Player/player.gd<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://bfpjlo64bp4cc::::res://Art/Assets/New folder/CHARACTER/jump/JUMP.png<>uid://bgahj1s3fbgwd::::res://Art/Assets/New folder/CHARACTER/run left/Run left.png
+::res://World/::1696236902
+canvas_layer.tscn::PackedScene::8145854875741557401::1696236902::0::1::::<><>::res://World/LifeBar.gd<>uid://djejves0cxftv::::res://Art/Assets/Sprite-0001.png
 LifeBar.gd::GDScript::-1::1696236547::0::1::::<>ProgressBar<>::
-world.tscn::PackedScene::4611791017083031547::1696236594::0::1::::<><>::uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>uid://dob6bl4sx8wjx::::res://World/canvas_layer.tscn
+world.tscn::PackedScene::4611791017083031547::1696236858::0::1::::<><>::uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>uid://dob6bl4sx8wjx::::res://World/canvas_layer.tscn

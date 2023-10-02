@@ -1,22 +1,22 @@
 extends ProgressBar
 
-var totalTime = 30  # Общее количество секунд
-var currentTime = 30  # Текущее количество секунд, начнем с максимального значения
+var totalTime = 30  # Total countdown time in seconds
+var currentTime = 30  # Current countdown time, initially set to the total time
 
 func _ready():
-	$Timer.start()  # Запустить таймер при загрузке
+	$Timer.start()  # Start the timer when the scene loads
 
 func _process(delta):
-	# Обновить прогресс-бар
-	set_value(currentTime / totalTime * 100)
+	# Calculate the percentage of time remaining and set it as the progress bar value
+	set_value(100 * currentTime / totalTime)
 	
-	# Проверить, завершился ли отсчет времени
+	# Check if the countdown has reached zero
 	if currentTime <= 0:
 		$Timer.stop()
-		print("Отсчет времени завершен.")
+		print("Countdown complete.")
 	else:
 		currentTime -= delta
 
 func _on_Timer_timeout():
-	# Уменьшить текущее время на 1 секунду при каждом срабатывании таймера
+	# Decrease the current time by 1 second when the timer fires
 	currentTime -= 1
