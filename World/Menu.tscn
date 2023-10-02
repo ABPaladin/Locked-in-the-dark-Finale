@@ -1,8 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://ccdiwnydxscvw"]
+[gd_scene load_steps=26 format=3 uid="uid://ccdiwnydxscvw"]
 
 [ext_resource type="Script" path="res://World/Menu.gd" id="1_c4osi"]
 [ext_resource type="FontFile" uid="uid://cfa5ydeoiwbul" path="res://Art/Assets/VCR_OSD_MONO_1.001.ttf" id="2_6gw68"]
 [ext_resource type="Texture2D" uid="uid://l52fge0b31eb" path="res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png" id="3_1njb4"]
+[ext_resource type="AudioStream" uid="uid://b4iefnladvdq2" path="res://Art/Assets/music/меню звук_02102023.mp3" id="4_256nc"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_6jg7p"]
 
@@ -206,6 +207,10 @@ theme_override_font_sizes/normal_font_size = 24
 text = " Locked in the 
 	  DARK"
 autowrap_mode = 0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_256nc")
+volume_db = 5.0
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

@@ -1,9 +1,11 @@
-[gd_scene load_steps=33 format=3 uid="uid://cgj6sai1jt0pq"]
+[gd_scene load_steps=35 format=3 uid="uid://cgj6sai1jt0pq"]
 
+[ext_resource type="Script" path="res://World/death.gd" id="1_4jvkl"]
 [ext_resource type="Texture2D" uid="uid://b78yghcc4ijfd" path="res://Art/Assets/New folder/MONSTERS/deathh.png" id="1_oa7pk"]
 [ext_resource type="Texture2D" uid="uid://brusujfeks3c8" path="res://Art/Assets/New folder/MONSTERS/no animation/Ghost.png" id="2_m8h0u"]
 [ext_resource type="Texture2D" uid="uid://hl5bqs7lyi8e" path="res://Art/Assets/New folder/MONSTERS/animation/monster.png" id="3_utbh6"]
 [ext_resource type="FontFile" uid="uid://cfa5ydeoiwbul" path="res://Art/Assets/VCR_OSD_MONO_1.001.ttf" id="4_ebobj"]
+[ext_resource type="AudioStream" uid="uid://b0r50cphjtinw" path="res://Art/Assets/music/1.Анимация смерти_02102023.mp3" id="6_tpj3o"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_8k5sg"]
 
@@ -199,6 +201,7 @@ animations = [{
 }]
 
 [node name="Death" type="Node2D"]
+script = ExtResource("1_4jvkl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
@@ -244,3 +247,7 @@ theme_override_fonts/normal_font = ExtResource("4_ebobj")
 theme_override_font_sizes/normal_font_size = 36
 text = "GAME OVER"
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_tpj3o")
+volume_db = 5.0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk7rmo2hl1y86"
+path="res://.godot/imported/5.Фоновая музыка_02102023.mp3-5504593662c0c08a011deec9fd773402.mp3str"
+
+[deps]
+
+source_file="res://Art/Assets/music/5.Фоновая музыка_02102023.mp3"
+dest_files=["res://.godot/imported/5.Фоновая музыка_02102023.mp3-5504593662c0c08a011deec9fd773402.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

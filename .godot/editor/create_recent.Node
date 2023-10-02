@@ -1,6 +1,7 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
 Sprite2D
 AnimatedSprite2D
-AudioStreamPlayer2D
 RichTextLabel
 Control
 Node2D

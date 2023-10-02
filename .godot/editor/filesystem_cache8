@@ -12,8 +12,12 @@ sprite 12.png::CompressedTexture2D::9082346834866218364::1696155286::1696234500:
 Sprite-0001.png::CompressedTexture2D::7799803348484083495::1696236766::1696236776::1::::<><>::
 Sprite-0008.png::CompressedTexture2D::7151945165376754184::1696151727::1696234500::1::::<><>::
 VCR_OSD_MONO_1.001.ttf::FontFile::5125650118809996711::1696247066::1696247066::1::::<><>::
-::res://Art/Assets/music/::1696270004
+::res://Art/Assets/music/::1696272619
+1.Анимация смерти_02102023.mp3::AudioStreamMP3::4178102479643141176::1696271158::1696271159::1::::<><>::
+5.Фоновая музыка_02102023.mp3::AudioStreamMP3::3155423603977646081::1696271143::1696271143::1::::<><>::
+yeah!!! sound effect #soundeffect #2022 #new #sound#gaming.mp3::AudioStreamMP3::3836883668148977960::1696272619::1696272619::1::::<><>::
 меню звук_02102023.mp3::AudioStreamMP3::4438664667970347615::1696270004::1696270004::1::::<><>::
+открытие_,_получение_чего_либо_mp3cut_net.mp3::AudioStreamMP3::7837801677431228375::1696271183::1696271184::1::::<><>::
 ::res://Art/Assets/New folder/::1696201899
 ::res://Art/Assets/New folder/CHARACTER/::1696201601
 ::res://Art/Assets/New folder/CHARACTER/IDLE/::1696203342
@@ -36,18 +40,18 @@ spider.png::CompressedTexture2D::2910457183360420959::1696201601::1696201602::1:
 ::res://Art/Dungeon Tile Set/::1696201840
 Dungeon Tile Set.png::CompressedTexture2D::3430552724998031322::1696201839::1696201840::1::::<><>::
 ::res://Camera/::1696197701
-::res://Player/::1696267332
-item.gd::GDScript::-1::1696267332::0::1::::<>Area2D<>::
+::res://Player/::1696272419
+item.gd::GDScript::-1::1696272419::0::1::::<>Area2D<>::
 player.gd::GDScript::-1::1696267168::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::1907876155137512796::1696242368::0::1::::<><>::res://Player/player.gd<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://bfpjlo64bp4cc::::res://Art/Assets/New folder/CHARACTER/jump/JUMP.png<>uid://bgahj1s3fbgwd::::res://Art/Assets/New folder/CHARACTER/run left/Run left.png
-::res://World/::1696269075
+::res://World/::1696272420
 change_stage.gd::GDScript::-1::1696258695::0::1::::<>Area2D<>::
-change_stage.tscn::PackedScene::836325552527675606::1696267571::0::1::::<><>::res://World/change_stage.gd<>uid://ecbd43ut3usx::::res://Art/Assets/New folder/MONSTERS/no animation/hui znaet.png
-death.tscn::PackedScene::5214468213619542490::1696266936::0::1::::<><>::uid://b78yghcc4ijfd::::res://Art/Assets/New folder/MONSTERS/deathh.png<>uid://brusujfeks3c8::::res://Art/Assets/New folder/MONSTERS/no animation/Ghost.png<>uid://hl5bqs7lyi8e::::res://Art/Assets/New folder/MONSTERS/animation/monster.png<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf
-End.gd::GDScript::-1::1696260053::0::1::::<>Control<>::
-End.tscn::PackedScene::5434641985245128876::1696266946::0::1::::<><>::res://World/End.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://c65j8grkwi242::::res://Art/Assets/Floppa.png<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png
+change_stage.tscn::PackedScene::836325552527675606::1696272420::0::1::::<><>::res://World/change_stage.gd<>uid://ecbd43ut3usx::::res://Art/Assets/New folder/MONSTERS/no animation/hui znaet.png
+death.tscn::PackedScene::5214468213619542490::1696272420::0::1::::<><>::uid://b78yghcc4ijfd::::res://Art/Assets/New folder/MONSTERS/deathh.png<>uid://brusujfeks3c8::::res://Art/Assets/New folder/MONSTERS/no animation/Ghost.png<>uid://hl5bqs7lyi8e::::res://Art/Assets/New folder/MONSTERS/animation/monster.png<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf
+End.gd::GDScript::-1::1696272209::0::1::::<>Control<>::
+End.tscn::PackedScene::5434641985245128876::1696272420::0::1::::<><>::res://World/End.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://c65j8grkwi242::::res://Art/Assets/Floppa.png<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://b0r50cphjtinw::::res://Art/Assets/music/1.Анимация смерти_02102023.mp3
 Finish.gd::GDScript::-1::1696249745::0::1::::<>Area2D<>::
 LifeBar.gd::GDScript::-1::1696267291::0::1::::<>ProgressBar<>::
-Menu.gd::GDScript::-1::1696246116::0::1::::<>Control<>::
-Menu.tscn::PackedScene::4919937931379096008::1696266936::0::1::::<><>::res://World/Menu.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png
-world.tscn::PackedScene::4611791017083031547::1696269075::0::1::::<><>::uid://l6efotllfdvi::::res://World/change_stage.tscn<>uid://ccdiwnydxscvw::::res://World/Menu.tscn<>uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>res://World/LifeBar.gd<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://cjot0273j5rku::::res://World/End.tscn<>uid://djejves0cxftv::::res://Art/Assets/Sprite-0001.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>res://Player/item.gd<>uid://hl5bqs7lyi8e::::res://Art/Assets/New folder/MONSTERS/animation/monster.png<>uid://brusujfeks3c8::::res://Art/Assets/New folder/MONSTERS/no animation/Ghost.png
+Menu.gd::GDScript::-1::1696272226::0::1::::<>Control<>::
+Menu.tscn::PackedScene::4919937931379096008::1696272420::0::1::::<><>::res://World/Menu.gd<>uid://cfa5ydeoiwbul::::res://Art/Assets/VCR_OSD_MONO_1.001.ttf<>uid://l52fge0b31eb::::res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png<>uid://b4iefnladvdq2::::res://Art/Assets/music/меню звук_02102023.mp3
+world.tscn::PackedScene::4611791017083031547::1696272420::0::1::::<><>::uid://l6efotllfdvi::::res://World/change_stage.tscn<>uid://ccdiwnydxscvw::::res://World/Menu.tscn<>uid://x5ku6lal4pge::::res://Art/Пиздкц.png<>res://World/LifeBar.gd<>uid://bo41x4yd8dqxe::::res://Art/Dungeon Tile Set/Dungeon Tile Set.png<>uid://cjot0273j5rku::::res://World/End.tscn<>uid://djejves0cxftv::::res://Art/Assets/Sprite-0001.png<>uid://2ggpan6wtfbo::::res://Player/player.tscn<>res://Player/item.gd<>uid://djwxpiqiig5ff::::res://Art/Assets/music/открытие_,_получение_чего_либо_mp3cut_net.mp3<>uid://hl5bqs7lyi8e::::res://Art/Assets/New folder/MONSTERS/animation/monster.png<>uid://brusujfeks3c8::::res://Art/Assets/New folder/MONSTERS/no animation/Ghost.png<>uid://c85pqyyb34lau::::res://Art/Assets/Sprite-0008.png<>uid://bk7rmo2hl1y86::::res://Art/Assets/music/5.Фоновая музыка_02102023.mp3

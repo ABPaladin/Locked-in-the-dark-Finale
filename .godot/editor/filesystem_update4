@@ -14,3 +14,7 @@ res://World/End.tscn
 res://World/End.gd
 res://World/death.tscn
 res://Player/player.gd
+res://World/AudioStreamPlayerMenu.gd
+res://World/AudioStreamPlayer2DWorld.gd
+res://World/world.gd
+res://World/death.gd

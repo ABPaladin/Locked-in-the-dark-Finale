@@ -9,3 +9,4 @@ func _ready():
 func _on_body_entered(body):
 	if "Player" in body.name:
 		get_tree().change_scene_to_file("res://World/End.tscn")
+		

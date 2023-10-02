@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buwu6b62ampsi"
+path="res://.godot/imported/yeah!!! sound effect #soundeffect #2022 #new #sound#gaming.mp3-1b3d0211696c341a753a3e5a30e01ed4.mp3str"
+
+[deps]
+
+source_file="res://Art/Assets/music/yeah!!! sound effect #soundeffect #2022 #new #sound#gaming.mp3"
+dest_files=["res://.godot/imported/yeah!!! sound effect #soundeffect #2022 #new #sound#gaming.mp3-1b3d0211696c341a753a3e5a30e01ed4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

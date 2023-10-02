@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjot0273j5rku"]
+[gd_scene load_steps=7 format=3 uid="uid://cjot0273j5rku"]
 
 [ext_resource type="Script" path="res://World/End.gd" id="1_b26jm"]
 [ext_resource type="FontFile" uid="uid://cfa5ydeoiwbul" path="res://Art/Assets/VCR_OSD_MONO_1.001.ttf" id="1_fi47j"]
 [ext_resource type="Texture2D" uid="uid://c65j8grkwi242" path="res://Art/Assets/Floppa.png" id="3_8dois"]
 [ext_resource type="Texture2D" uid="uid://l52fge0b31eb" path="res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png" id="3_42eas"]
+[ext_resource type="AudioStream" uid="uid://bk7rmo2hl1y86" path="res://Art/Assets/music/5.Фоновая музыка_02102023.mp3" id="5_bbesu"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_5cc5g"]
 
@@ -66,5 +67,9 @@ position = Vector2(9.93751, -24.8677)
 scale = Vector2(1.65441, 1.65441)
 texture = ExtResource("3_42eas")
 hframes = 18
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_bbesu")
+volume_db = 5.0
 
 [connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
