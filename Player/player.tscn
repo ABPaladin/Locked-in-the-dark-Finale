@@ -1,10 +1,9 @@
-[gd_scene load_steps=46 format=3 uid="uid://2ggpan6wtfbo"]
+[gd_scene load_steps=45 format=3 uid="uid://2ggpan6wtfbo"]
 
 [ext_resource type="Script" path="res://Player/player.gd" id="1_hog77"]
 [ext_resource type="Texture2D" uid="uid://l52fge0b31eb" path="res://Art/Assets/New folder/CHARACTER/IDLE/IDLE.png" id="2_8xdv1"]
 [ext_resource type="Texture2D" uid="uid://bfpjlo64bp4cc" path="res://Art/Assets/New folder/CHARACTER/jump/JUMP.png" id="3_7gpgp"]
 [ext_resource type="Texture2D" uid="uid://bgahj1s3fbgwd" path="res://Art/Assets/New folder/CHARACTER/run left/Run left.png" id="4_oqx8k"]
-[ext_resource type="PackedScene" uid="uid://djwqih5elp8w3" path="res://Player/lifebar.tscn" id="5_pqltg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rqs2p"]
 atlas = ExtResource("2_8xdv1")
@@ -314,7 +313,5 @@ position = Vector2(-3, -6)
 color = Color(0.996094, 0.996094, 0.25, 1)
 energy = 1.3
 texture = SubResource("GradientTexture2D_gjhpd")
-
-[node name="Control" parent="." instance=ExtResource("5_pqltg")]
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
