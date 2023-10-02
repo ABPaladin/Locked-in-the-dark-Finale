@@ -1,7 +1,8 @@
+AnimatedSprite2D
+Sprite2D
+AudioStreamPlayer2D
 RichTextLabel
 Control
-Sprite2D
-AnimatedSprite2D
 Node2D
 AnimationPlayer
 AnimationTree

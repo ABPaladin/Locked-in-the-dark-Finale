@@ -12,7 +12,8 @@ func _on_body_entered(body):
 		# Check if the progress bar reference exists
 		if progressBar:
 			# Add 10 seconds to the current time (assuming you want to add 10 seconds)
-			progressBar.totalTime -= 2  # Corrected the property name
+			progressBar.totalTime -= 5  # Corrected the property name
+			progressBar.totalTime += 4
 			print("Progress bar found!")
 		else:
 			# If the progress bar reference doesn't exist, print a message for debugging

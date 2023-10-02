@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://l6efotllfdvi"]
 
 [ext_resource type="Script" path="res://World/change_stage.gd" id="1_2iibi"]
-[ext_resource type="Texture2D" uid="uid://cigibkdx2wkwl" path="res://icon.svg" id="1_8ofwy"]
+[ext_resource type="Texture2D" uid="uid://ecbd43ut3usx" path="res://Art/Assets/New folder/MONSTERS/no animation/hui znaet.png" id="2_e05km"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_prw4i"]
 size = Vector2(24, 24)
@@ -13,7 +13,7 @@ script = ExtResource("1_2iibi")
 shape = SubResource("RectangleShape2D_prw4i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1875, 0.1875)
-texture = ExtResource("1_8ofwy")
+scale = Vector2(1.09375, 1.09375)
+texture = ExtResource("2_e05km")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

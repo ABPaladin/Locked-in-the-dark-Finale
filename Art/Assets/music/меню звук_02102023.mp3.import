@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4iefnladvdq2"
+path="res://.godot/imported/меню звук_02102023.mp3-cdc786b443a0266554cdf63ddd1f3e63.mp3str"
+
+[deps]
+
+source_file="res://Art/Assets/music/меню звук_02102023.mp3"
+dest_files=["res://.godot/imported/меню звук_02102023.mp3-cdc786b443a0266554cdf63ddd1f3e63.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
