@@ -1,0 +1,4 @@
+res://World/world.tscn
+res://Player/player.tscn
+res://Player/player.gd
+res://Player/lifebar.tscn
