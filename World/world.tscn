@@ -869,25 +869,6 @@ color = Color(0.996094, 0.996094, 0.25, 1)
 energy = 1.3
 texture = SubResource("GradientTexture2D_087ya")
 
-[node name="Area2D10" type="Area2D" parent="."]
-position = Vector2(2999, 119)
-script = ExtResource("6_h7131")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
-position = Vector2(4, 4)
-shape = SubResource("CapsuleShape2D_4e6ur")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D10"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_q0ov3")
-centered = false
-
-[node name="PointLight2D2" type="PointLight2D" parent="Area2D10/Sprite2D"]
-position = Vector2(6, 7)
-color = Color(0.996094, 0.996094, 0.25, 1)
-energy = 1.3
-texture = SubResource("GradientTexture2D_087ya")
-
 [node name="Area2D11" type="Area2D" parent="."]
 position = Vector2(3245, 149)
 script = ExtResource("6_h7131")
@@ -997,25 +978,6 @@ texture = ExtResource("2_q0ov3")
 centered = false
 
 [node name="PointLight2D2" type="PointLight2D" parent="Area2D6/Sprite2D"]
-position = Vector2(6, 6)
-color = Color(0.996094, 0.996094, 0.25, 1)
-energy = 1.3
-texture = SubResource("GradientTexture2D_087ya")
-
-[node name="Area2D13" type="Area2D" parent="."]
-position = Vector2(1827, 228)
-script = ExtResource("6_h7131")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
-position = Vector2(4, 4)
-shape = SubResource("CapsuleShape2D_4e6ur")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D13"]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_q0ov3")
-centered = false
-
-[node name="PointLight2D2" type="PointLight2D" parent="Area2D13/Sprite2D"]
 position = Vector2(6, 6)
 color = Color(0.996094, 0.996094, 0.25, 1)
 energy = 1.3
@@ -1156,11 +1118,9 @@ script = ExtResource("14_y3k4v")
 [connection signal="body_entered" from="Area2D7" to="Area2D7" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D8" to="Area2D8" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D9" to="Area2D9" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="Area2D10" to="Area2D10" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D11" to="Area2D11" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D12" to="Area2D12" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D5" to="Area2D5" method="_on_body_entered" flags=18]
 [connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_body_entered" flags=18]
-[connection signal="body_entered" from="Area2D13" to="Area2D13" method="_on_body_entered" flags=18]
