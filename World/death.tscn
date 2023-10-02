@@ -205,12 +205,12 @@ script = ExtResource("1_4jvkl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 0, 0, 1)
-position = Vector2(152.25, 102.25)
-scale = Vector2(305.5, 205.5)
+position = Vector2(148.75, 96.25)
+scale = Vector2(298.5, 193.5)
 texture = SubResource("CanvasTexture_8k5sg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(137, 107)
+position = Vector2(112, 95)
 scale = Vector2(3.4, 3.4)
 sprite_frames = SubResource("SpriteFrames_n624l")
 autoplay = "default"
@@ -218,14 +218,14 @@ frame = 10
 frame_progress = 0.377663
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(220, 97)
-scale = Vector2(5.0625, 5.0625)
+position = Vector2(180, 94)
+scale = Vector2(3.40625, 3.40625)
 sprite_frames = SubResource("SpriteFrames_whdy3")
 autoplay = "default"
 frame_progress = 0.345024
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(66, 105)
+position = Vector2(42, 98)
 scale = Vector2(3.23437, 3.23437)
 texture = ExtResource("2_m8h0u")
 
@@ -238,7 +238,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
 texture_filter = 1
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.525
+anchor_right = -0.525
 offset_left = 41.0
 offset_top = 7.0
 offset_right = 236.0
